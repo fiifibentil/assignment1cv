@@ -10,13 +10,13 @@
 <br><br><br>
 <h1 style="text-align: center; ">Welcome</h1>
 
-<div style="text-align: center; "><form action="cv.html" >
+<div style="text-align: center; "><form action="cv.html" onsubmit="return check()">
     <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
+    <input type="text" id="fname" name="fname"><br><br><span id="errorfname" class="error"></span>
     <label for="mname">Middle name:</label>
-    <input type="text" id="mname" name="mname"><br><br>
+    <input type="text" id="mname" name="mname"><br><br><span id="errormname" class="error"></span>
     <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname">
+    <input type="text" id="lname" name="lname"><span id="errorlname" class="error"></span>
     <p>Gender: 
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label>
@@ -24,14 +24,13 @@
         <label for="female">Female</label>
     </p>
     <label for="number">Phone number</label>
-    <input type="number" id="number" name="number"><br><br>
+    <input type="number" id="number" name="number"><br><br><span id="errornumber" class="error"></span>
     <label for="email">Email</label>
-    <input type="email" id="email" name="email"><br><br>
+    <input type="email" id="email" name="email"><br><br><span id="erroremail" class="error"></span>
     <label for="address">Address</label>
-    <input type="text" id="address" name="address"><br><br>
+    <input type="text" id="address" name="address"><br><br><span id="erroraddress" class="error"></span>
     <input type="submit" onclick="store()">
 </form></div>
-    <a href="cv.html">Next</a>
     
 
 </body>
