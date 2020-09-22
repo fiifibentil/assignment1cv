@@ -18,3 +18,7 @@ function editinfo() {
     document.getElementById("cvname").innerHTML=Firstname +' '+ Middlename+ ' '+ Lastname;
     return;
     } 
+
+$("#submission").click(function(event) {
+    event.preventDefault();
+    });
