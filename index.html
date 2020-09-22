@@ -9,7 +9,7 @@
 <br><br><br>
 <h1 style="text-align: center; ">Welcome</h1>
 
-<div style="text-align: center; "><form action="/action_page.php">
+<div style="text-align: center; "><form >
     <label for="fname">First name:</label>
     <input type="text" id="fname" name="fname"><br><br>
     <label for="mname">Middle name:</label>
@@ -28,9 +28,8 @@
     <input type="email" id="email" name="email"><br><br>
     <label for="address">Address</label>
     <input type="text" id="address" name="address"><br><br>
-    <a href="cv.html"><input type="submit" value="Submit" onclick="store()"></a>
+    <a href="cv.html"><button onclick="store()">Submit</button></a>
 </form></div>
-    <a href="cv.html">next</a>
     <script>
         function store() {
         if (person != null) {
