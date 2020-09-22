@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div style="text-align:center;"><p><strong> Fiifi Ketu Bentil </strong> <br>P.O. Box 419, Tema. <br>0261300440 <br>fiifi.bentil@ashesi.edu.gh</p></div>
+        <div style="text-align:center;"><p id="cvname"><strong> Fiifi Ketu Bentil </strong> <br>P.O. Box 419, Tema. <br>0261300440 <br>fiifi.bentil@ashesi.edu.gh</p></div>
         <p><strong>OBJECTIVE</strong></p>
         <hr>
         <p>Seeking a challenging entry-level position in Sales and Marketing with considerable opportunities for growth.</p>
@@ -53,5 +53,14 @@
         <p><strong>REFERENCES</strong></p>
         <hr>
         <p>Available upon request</p>
+        <button onclick="test()">Try it</button>
+
+        <script>
+            function test() {
+            if (person != null) {
+                document.getElementById("cvname").innerHTML =localStorage.getItem("fname")+localStorage.getItem("mname")+localStorage.getItem("lname");
+            }
+            }
+        </script>
     </body>
 </html>

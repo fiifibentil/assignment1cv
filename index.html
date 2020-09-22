@@ -28,8 +28,18 @@
     <input type="email" id="email" name="email"><br><br>
     <label for="address">Address</label>
     <input type="text" id="address" name="address"><br><br>
-    <input type="submit" value="Submit">
+    <a href="cv.html"><input type="submit" value="Submit" onclick="store()"></a>
 </form></div>
+
+    <script>
+        function store() {
+        if (person != null) {
+            localStorage.setItem("fname",document.getElementById("fname").value);
+            localStorage.setItem("mname",document.getElementById("mname").value);
+            localStorage.setItem("lname",document.getElementById("lname").value);
+        }
+        }
+    </script>
 
 </body>
 </html>
