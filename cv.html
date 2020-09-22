@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <title>CV</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="editinfo()">
         <div style="text-align:center;"><p id="cvname"><strong> Fiifi Ketu Bentil </strong> <br>P.O. Box 419, Tema. <br>0261300440 <br>fiifi.bentil@ashesi.edu.gh</p></div>
         <p><strong>OBJECTIVE</strong></p>
         <hr>
@@ -53,14 +54,7 @@
         <p><strong>REFERENCES</strong></p>
         <hr>
         <p>Available upon request</p>
-        <button onclick="test()">Try it</button>
 
-        <script>
-            function test() {
-            if (person != null) {
-                document.getElementById("cvname").innerHTML =localStorage.getItem("fname")+localStorage.getItem("mname")+localStorage.getItem("lname");
-            }
-            }
-        </script>
+        
     </body>
 </html>

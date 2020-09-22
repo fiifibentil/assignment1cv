@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <title>Fiifi's Portfolio Page</title>
          <link rel="stylesheet" href="style.css">
+         <script src="script.js"></script>
     </head>
 <body>
 <br><br><br>
 <h1 style="text-align: center; ">Welcome</h1>
 
-<div style="text-align: center; "><form >
+<div style="text-align: center; "><form action="cv.html" method="POST">
     <label for="fname">First name:</label>
     <input type="text" id="fname" name="fname"><br><br>
     <label for="mname">Middle name:</label>
@@ -28,17 +29,10 @@
     <input type="email" id="email" name="email"><br><br>
     <label for="address">Address</label>
     <input type="text" id="address" name="address"><br><br>
-    <a href="cv.html"><button onclick="store()">Submit</button></a>
+    <input type="submit" onclick="store()">
 </form></div>
-    <script>
-        function store() {
-        if (person != null) {
-            localStorage.setItem("fname",document.getElementById("fname").value);
-            localStorage.setItem("mname",document.getElementById("mname").value);
-            localStorage.setItem("lname",document.getElementById("lname").value);
-        }
-        }
-    </script>
+    <a href="cv.html">Next</a>
+    
 
 </body>
 </html>
