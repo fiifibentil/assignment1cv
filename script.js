@@ -34,9 +34,9 @@ function check(){
     const firstname= document.getElementById('fname').value;
     const middlename= document.getElementById('mname').value;
     const lastname= document.getElementById('lname').value;
-    //const phonenumber= document.getElementById('number').value;
+    const phonenumber= document.getElementById('number').value;
     const email= document.getElementById('email').value;
-    //const address= document.getElementById('address').value;
+    const address= document.getElementById('address').value;
 
     const checkname = /^[A-Za-z]{3,30}$/;
     const checkemail = /^[A-Za-z_.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
@@ -67,13 +67,13 @@ function check(){
         return false;
     }
 
-    /*if(checkname.test(phonenumber)){
+    if(checknumber.test(phonenumber)){
         document.getElementById('errornumber').innerHTML=" ";
     }
     else{
         document.getElementById("errornumber").innerHTML="The phone number you entered is invalid. <br>";
         return false;
-    }*/
+    }
 
     if(checkemail.test(email)){
         document.getElementById('erroremail').innerHTML=" ";
@@ -83,13 +83,13 @@ function check(){
         return false;
     }
 
-    /*if(checkname.test(address)){
+    if(checkaddress.test(address)){
         document.getElementById('erroraddress').innerHTML=" ";
     }
     else{
         document.getElementById("erroraddress").innerHTML="The address you entered is invalid. <br>";
         return false;
-    }*/
+    }
 
 
 
